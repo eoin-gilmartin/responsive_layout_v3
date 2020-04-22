@@ -333,6 +333,10 @@ h3 {
     .search {
         float: left;
     }
+    
+    #experience {
+        padding-top: 40px;
+    }
 
     #id {
         padding-top: 40px;
