@@ -1,0 +1,352 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+header p {
+    color: #998787;
+    padding-top: 30px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Baloo Paaji 2', sans-serif;
+    color: darkslategray;
+    background: #f5f2f2;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Section Styles */
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    list-style-type: none;
+    margin: 0 auto;
+
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+    transition: all .5s;
+}
+
+img {
+    max-width: 100%;
+    padding: 20px 0 0 0;
+}
+
+p {
+    margin: 15px;
+    margin-top: -10px;
+}
+
+h1 {
+    color: #61490c;
+    font-family: 'Comic Neue', sans-serif;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 500;
+
+}
+
+.content-portfolio {
+    font-weight: 500;
+}
+
+.profile-image {
+    width: 70%;
+}
+
+.sixth {
+    color: #998787;
+    margin-bottom: 40px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.nav {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.nav-home,
+.nav-portfolio,
+.nav-experience {
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.nav-contact {
+    background-color: white;
+}
+
+/* ---- Layout Containers ---- */
+
+.content {
+    background: white;
+    margin: 40px 0;
+    padding: 20px 0 30px 0;
+}
+
+.label-phone {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.label-email {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact {
+    padding-top: 20px;
+    margin-bottom: 60px;
+    color: #998787;
+}
+
+.main-footer {
+    border-top: 1px solid #dbd5d5;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-name {
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-top {
+    display: block;
+    float: right;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.footer-nav {
+    display: none;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .nav li {
+        background: none;
+    }
+
+    .profile-image {
+        width: 350px;
+        height: 200px;
+        float: right;
+        margin: 0 10px 20px 10px;
+        padding: 0;
+    }
+
+    header p {
+        text-align: left;
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .marketing,
+    .travel,
+    .gallery {
+        width: 40%;
+        float: left;
+        margin-left: 65px;
+        margin-bottom: 25px;
+    }
+
+    .search,
+    .favorite,
+    .calculator {
+        width: 40%;
+        float: right;
+        margin-right: 70px;
+        margin-bottom: 25px;
+    }
+
+    .info {
+        margin-left: auto;
+        margin-right: auto;
+        width: 28em;
+        margin-bottom: 20px;
+    }
+
+    .footer-name {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    .footer-top {
+        display: none;
+    }
+
+    .footer-nav {
+        display: flex;
+        font-weight: bold;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+        padding-top: 20px;
+    }
+
+    .footer-nav li {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .marketing,
+    .favorite {
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .search,
+    .calculator {
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-nav {
+        padding-top: 30px;
+    }
+
+    h1 {
+        float: left;
+        margin-left: 60px;
+    }
+
+    .nav {
+        width: 30%;
+        float: right;
+        margin-right: 60px;
+    }
+
+    .profile-image {
+        padding: 0;
+        margin: 0;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+
+    header p {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        width: 50%;
+        margin-left: 60px;
+    }
+
+    .content-portfolio {
+        padding: 30px;
+    }
+
+    .content {
+        width: 95%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .marketing,
+    .travel,
+    .gallery,
+    .search,
+    .favorite,
+    .calculator {
+        width: 30%;
+        padding: 0;
+        margin: 0;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .search {
+        float: left;
+    }
+
+    #id {
+        padding-top: 40px;
+    }
+
+    .footer-name {
+        padding: 0;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .footer-nav {
+        padding: 0;
+        margin: 0;
+        padding: 20px 0;
+    }
+}
